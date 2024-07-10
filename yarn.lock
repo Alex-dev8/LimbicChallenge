@@ -2155,6 +2155,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-async-storage/async-storage@npm:^1.23.1":
+  version: 1.23.1
+  resolution: "@react-native-async-storage/async-storage@npm:1.23.1"
+  dependencies:
+    merge-options: ^3.0.4
+  peerDependencies:
+    react-native: ^0.0.0-0 || >=0.60 <1.0
+  checksum: 7096546ed4a5faf1f6e0425e2e15713575f1a7493a04524da386ff35c3844b57b8fd20544fad4157b4a61e048b10235f2f06124f262da5b327edc74fbc31e02b
+  languageName: node
+  linkType: hard
+
 "@react-native-community/cli-clean@npm:13.6.9":
   version: 13.6.9
   resolution: "@react-native-community/cli-clean@npm:13.6.9"
@@ -2333,6 +2344,18 @@ __metadata:
   bin:
     rnc-cli: build/bin.js
   checksum: 5e997b50fd687b4f3fcdde6a1fd36317ffee5536649fb16e87f6e3bb1bd56a279daad57b7d904d0442425106f048a114e3987f9a0fc8dc3fadd0a784dcb83a40
+  languageName: node
+  linkType: hard
+
+"@react-native-community/push-notification-ios@npm:^1.11.0":
+  version: 1.11.0
+  resolution: "@react-native-community/push-notification-ios@npm:1.11.0"
+  dependencies:
+    invariant: ^2.2.4
+  peerDependencies:
+    react: ">=16.6.3"
+    react-native: ">=0.58.4"
+  checksum: d8c8cdd0d4e8112752a13bf2c426618ec8edd91eacadf03f05375648b5f12ffa761e8676e9d6ac9e5bc5ded73c991ab2219c67fe02e110dfaf38f4cb59695868
   languageName: node
   linkType: hard
 
@@ -2572,6 +2595,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@reduxjs/toolkit@npm:^2.2.6":
+  version: 2.2.6
+  resolution: "@reduxjs/toolkit@npm:2.2.6"
+  dependencies:
+    immer: ^10.0.3
+    redux: ^5.0.1
+    redux-thunk: ^3.1.0
+    reselect: ^5.1.0
+  peerDependencies:
+    react: ^16.9.0 || ^17.0.0 || ^18
+    react-redux: ^7.2.1 || ^8.1.3 || ^9.0.0
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-redux:
+      optional: true
+  checksum: 9cd02df5c7f2a40ce9ea41c74a7684a9be2b4adf75c2ad897375fb64b57c039e4fa7f2b74c86588434f795f3ab90b71a14ab6768ace8fd5c6d0153a6ed93ba83
+  languageName: node
+  linkType: hard
+
 "@rnx-kit/chromium-edge-launcher@npm:^1.0.0":
   version: 1.0.0
   resolution: "@rnx-kit/chromium-edge-launcher@npm:1.0.0"
@@ -2631,6 +2674,24 @@ __metadata:
   dependencies:
     "@sinonjs/commons": ^3.0.0
   checksum: 614d30cb4d5201550c940945d44c9e0b6d64a888ff2cd5b357f95ad6721070d6b8839cd10e15b76bf5e14af0bcc1d8f9ec00d49a46318f1f669a4bec1d7f3148
+  languageName: node
+  linkType: hard
+
+"@tanstack/query-core@npm:5.50.1":
+  version: 5.50.1
+  resolution: "@tanstack/query-core@npm:5.50.1"
+  checksum: e71d850ba8181e72e758c5c3001293865f959973f64d6ff21c41db5894665bd93e5f0a3e50e5c56656e09c87dcb8d7e0ab41e34b1eda84050473248fb8ac6eaf
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:^5.50.1":
+  version: 5.50.1
+  resolution: "@tanstack/react-query@npm:5.50.1"
+  dependencies:
+    "@tanstack/query-core": 5.50.1
+  peerDependencies:
+    react: ^18.0.0
+  checksum: 4120ee075a58b477df7a1044fcfff13c30037835717cdd77c77ed49f1f2a35cecfc032b8c96faadb38287e622159bab1cf70b26ed83506b95746d46fc8aed3f1
   languageName: node
   linkType: hard
 
@@ -2780,6 +2841,13 @@ __metadata:
   version: 2.0.3
   resolution: "@types/stack-utils@npm:2.0.3"
   checksum: 72576cc1522090fe497337c2b99d9838e320659ac57fa5560fcbdcbafcf5d0216c6b3a0a8a4ee4fdb3b1f5e3420aa4f6223ab57b82fef3578bec3206425c6cf5
+  languageName: node
+  linkType: hard
+
+"@types/use-sync-external-store@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "@types/use-sync-external-store@npm:0.0.3"
+  checksum: 161ddb8eec5dbe7279ac971531217e9af6b99f7783213566d2b502e2e2378ea19cf5e5ea4595039d730aa79d3d35c6567d48599f69773a02ffcff1776ec2a44e
   languageName: node
   linkType: hard
 
@@ -3003,19 +3071,31 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
+    "@react-native-async-storage/async-storage": ^1.23.1
+    "@react-native-community/push-notification-ios": ^1.11.0
     "@react-native/babel-preset": 0.74.85
     "@react-native/eslint-config": 0.74.85
     "@react-native/metro-config": 0.74.85
     "@react-native/typescript-config": 0.74.85
+    "@reduxjs/toolkit": ^2.2.6
+    "@tanstack/react-query": ^5.50.1
     "@types/react": ^18.2.6
     "@types/react-test-renderer": ^18.0.0
+    axios: ^1.7.2
     babel-jest: ^29.6.3
     eslint: ^8.19.0
     jest: ^29.6.3
     prettier: 2.8.8
     react: 18.2.0
     react-native: 0.74.3
+    react-native-config: ^1.5.2
+    react-native-date-picker: ^5.0.4
+    react-native-notification: ^2.0.0
+    react-native-permissions: ^4.1.5
+    react-native-uuid: ^2.0.2
+    react-redux: ^9.1.2
     react-test-renderer: 18.2.0
+    redux-persist: ^6.0.0
     typescript: 5.0.4
   languageName: unknown
   linkType: soft
@@ -3348,12 +3428,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"asynckit@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "asynckit@npm:0.4.0"
+  checksum: 7b78c451df768adba04e2d02e63e2d0bf3b07adcd6e42b4cf665cb7ce899bedd344c69a1dcbce355b5f972d597b25aaa1c1742b52cffd9caccb22f348114f6be
+  languageName: node
+  linkType: hard
+
 "available-typed-arrays@npm:^1.0.7":
   version: 1.0.7
   resolution: "available-typed-arrays@npm:1.0.7"
   dependencies:
     possible-typed-array-names: ^1.0.0
   checksum: 1aa3ffbfe6578276996de660848b6e95669d9a95ad149e3dd0c0cda77db6ee1dbd9d1dd723b65b6d277b882dd0c4b91a654ae9d3cf9e1254b7e93e4908d78fd3
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.7.2":
+  version: 1.7.2
+  resolution: "axios@npm:1.7.2"
+  dependencies:
+    follow-redirects: ^1.15.6
+    form-data: ^4.0.0
+    proxy-from-env: ^1.1.0
+  checksum: e457e2b0ab748504621f6fa6609074ac08c824bf0881592209dfa15098ece7e88495300e02cd22ba50b3468fd712fe687e629dcb03d6a3f6a51989727405aedf
   languageName: node
   linkType: hard
 
@@ -3859,6 +3957,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"combined-stream@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "combined-stream@npm:1.0.8"
+  dependencies:
+    delayed-stream: ~1.0.0
+  checksum: 49fa4aeb4916567e33ea81d088f6584749fc90c7abec76fd516bf1c5aa5c79f3584b5ba3de6b86d26ddd64bae5329c4c7479343250cfe71c75bb366eae53bb7c
+  languageName: node
+  linkType: hard
+
 "command-exists@npm:^1.2.8":
   version: 1.2.9
   resolution: "command-exists@npm:1.2.9"
@@ -4122,6 +4229,13 @@ __metadata:
     has-property-descriptors: ^1.0.0
     object-keys: ^1.1.1
   checksum: b4ccd00597dd46cb2d4a379398f5b19fca84a16f3374e2249201992f36b30f6835949a9429669ee6b41b6e837205a163eadd745e472069e70dfc10f03e5fcc12
+  languageName: node
+  linkType: hard
+
+"delayed-stream@npm:~1.0.0":
+  version: 1.0.0
+  resolution: "delayed-stream@npm:1.0.0"
+  checksum: 46fe6e83e2cb1d85ba50bd52803c68be9bd953282fa7096f51fc29edd5d67ff84ff753c51966061e5ba7cb5e47ef6d36a91924eddb7f3f3483b1c560f77a0020
   languageName: node
   linkType: hard
 
@@ -4962,6 +5076,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"follow-redirects@npm:^1.15.6":
+  version: 1.15.6
+  resolution: "follow-redirects@npm:1.15.6"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: a62c378dfc8c00f60b9c80cab158ba54e99ba0239a5dd7c81245e5a5b39d10f0c35e249c3379eae719ff0285fff88c365dd446fab19dee771f1d76252df1bbf5
+  languageName: node
+  linkType: hard
+
 "for-each@npm:^0.3.3":
   version: 0.3.3
   resolution: "for-each@npm:0.3.3"
@@ -4978,6 +5102,17 @@ __metadata:
     cross-spawn: ^7.0.0
     signal-exit: ^4.0.1
   checksum: 3e2e844d6003c96d70affe8ae98d7eaaba269a868c14d997620c088340a8775cd5d2d9043e6ceebae1928d8d9a874911c4d664b9a267e8995945df20337aebc0
+  languageName: node
+  linkType: hard
+
+"form-data@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "form-data@npm:4.0.0"
+  dependencies:
+    asynckit: ^0.4.0
+    combined-stream: ^1.0.8
+    mime-types: ^2.1.12
+  checksum: 01135bf8675f9d5c61ff18e2e2932f719ca4de964e3be90ef4c36aacfc7b9cb2fceb5eca0b7e0190e3383fe51c5b37f4cb80b62ca06a99aaabfcfd6ac7c9328c
   languageName: node
   linkType: hard
 
@@ -5423,6 +5558,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"immer@npm:^10.0.3":
+  version: 10.1.1
+  resolution: "immer@npm:10.1.1"
+  checksum: 07c67970b7d22aded73607193d84861bf786f07d47f7d7c98bb10016c7a88f6654ad78ae1e220b3c623695b133aabbf24f5eb8d9e8060cff11e89ccd81c9c10b
+  languageName: node
+  linkType: hard
+
 "import-fresh@npm:^2.0.0":
   version: 2.0.0
   resolution: "import-fresh@npm:2.0.0"
@@ -5714,6 +5856,13 @@ __metadata:
   version: 3.0.3
   resolution: "is-path-inside@npm:3.0.3"
   checksum: abd50f06186a052b349c15e55b182326f1936c89a78bf6c8f2b707412517c097ce04bc49a0ca221787bc44e1049f51f09a2ffb63d22899051988d3a618ba13e9
+  languageName: node
+  linkType: hard
+
+"is-plain-obj@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "is-plain-obj@npm:2.1.0"
+  checksum: cec9100678b0a9fe0248a81743041ed990c2d4c99f893d935545cfbc42876cbe86d207f3b895700c690ad2fa520e568c44afc1605044b535a7820c1d40e38daa
   languageName: node
   linkType: hard
 
@@ -6806,6 +6955,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"merge-options@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "merge-options@npm:3.0.4"
+  dependencies:
+    is-plain-obj: ^2.1.0
+  checksum: d86ddb3dd6e85d558dbf25dc944f3527b6bacb944db3fdda6e84a3f59c4e4b85231095f58b835758b9a57708342dee0f8de0dffa352974a48221487fe9f4584f
+  languageName: node
+  linkType: hard
+
 "merge-stream@npm:^2.0.0":
   version: 2.0.0
   resolution: "merge-stream@npm:2.0.0"
@@ -7055,7 +7213,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mime-types@npm:^2.1.27, mime-types@npm:~2.1.34":
+"mime-types@npm:^2.1.12, mime-types@npm:^2.1.27, mime-types@npm:~2.1.34":
   version: 2.1.35
   resolution: "mime-types@npm:2.1.35"
   dependencies:
@@ -7877,6 +8035,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"proxy-from-env@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "proxy-from-env@npm:1.1.0"
+  checksum: ed7fcc2ba0a33404958e34d95d18638249a68c430e30fcb6c478497d72739ba64ce9810a24f53a7d921d0c065e5b78e3822759800698167256b04659366ca4d4
+  languageName: node
+  linkType: hard
+
 "punycode@npm:^2.1.0":
   version: 2.3.1
   resolution: "punycode@npm:2.3.1"
@@ -7952,6 +8117,56 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-config@npm:^1.5.2":
+  version: 1.5.2
+  resolution: "react-native-config@npm:1.5.2"
+  peerDependencies:
+    react-native-windows: ">=0.61"
+  peerDependenciesMeta:
+    react-native-windows:
+      optional: true
+  checksum: fc777546557704629f7aabdd2cf24decdea666ba90975602523103ed0a26a358f2f23241cae2aed646b82784e657cc01ecf7b6df2d5524d6b0ea3edfa9054d7f
+  languageName: node
+  linkType: hard
+
+"react-native-date-picker@npm:^5.0.4":
+  version: 5.0.4
+  resolution: "react-native-date-picker@npm:5.0.4"
+  peerDependencies:
+    react: ">= 17.0.1"
+    react-native: ">= 0.64.3"
+  checksum: 67db7fba5de613c61a70b5b9274daef8c7d3b6f6cdc5a6063eb61126d4df43252c501c2cb78ebda37fb0997ccb0994e949976d0fb395453580019923100e03ad
+  languageName: node
+  linkType: hard
+
+"react-native-notification@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "react-native-notification@npm:2.0.0"
+  checksum: 114f8c3ce28c304e151acf2aafb6f7870fe614afefe78a2890424a6f547e55c2ed1c8acc5a3378a676ce01738b36d33621a663b9315f50d56e5b835bb9252de9
+  languageName: node
+  linkType: hard
+
+"react-native-permissions@npm:^4.1.5":
+  version: 4.1.5
+  resolution: "react-native-permissions@npm:4.1.5"
+  peerDependencies:
+    react: ">=18.1.0"
+    react-native: ">=0.70.0"
+    react-native-windows: ">=0.70.0"
+  peerDependenciesMeta:
+    react-native-windows:
+      optional: true
+  checksum: dc4b366a0f561a47f032c027eb703a2be45e801788b915ed583e38f617eea23656eb63a77b17fb3a663fe3199b2ec25788f799e751421634e35a64f5258feed9
+  languageName: node
+  linkType: hard
+
+"react-native-uuid@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "react-native-uuid@npm:2.0.2"
+  checksum: 149f65549132a240ac237f4db34063fd08473e4b3a9b5958e3d0d6722cf10754efb222b1c6085a3dc42e0718ca9575b38cd5535ae83a96534dde0f54d343e915
+  languageName: node
+  linkType: hard
+
 "react-native@npm:0.74.3":
   version: 0.74.3
   resolution: "react-native@npm:0.74.3"
@@ -8002,6 +8217,25 @@ __metadata:
   bin:
     react-native: cli.js
   checksum: bfa1c4a9823149a0895c7cd9db2d7ebb93fe5497cad2fc44e236479fc3e3fb690b3fda86aee4cd3f6d767ed3e62fb3f0ab9bfbd56e29a46d3f2f21040129783c
+  languageName: node
+  linkType: hard
+
+"react-redux@npm:^9.1.2":
+  version: 9.1.2
+  resolution: "react-redux@npm:9.1.2"
+  dependencies:
+    "@types/use-sync-external-store": ^0.0.3
+    use-sync-external-store: ^1.0.0
+  peerDependencies:
+    "@types/react": ^18.2.25
+    react: ^18.0
+    redux: ^5.0.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    redux:
+      optional: true
+  checksum: 1ee9cf41f29f68267320b4fc3bcf6a76a3825c82441612582678ddd827a2b60834f687d2a8b755c905885dfce476a1eb41af42b36f4dd71f8ee9991296a1e515
   languageName: node
   linkType: hard
 
@@ -8088,6 +8322,31 @@ __metadata:
     source-map: ~0.6.1
     tslib: ^2.0.1
   checksum: 03cc7f57562238ba258d468be67bf7446ce7a707bc87a087891dad15afead46c36e9aaeedf2130e2ab5a465244a9c62bfd4127849761cf8f4085abe2f3e5f485
+  languageName: node
+  linkType: hard
+
+"redux-persist@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "redux-persist@npm:6.0.0"
+  peerDependencies:
+    redux: ">4.0.0"
+  checksum: edaf10dbf17351ce8058d0802357adae8665b3a1ff39371834e37838ddbe1a79cccbc717b8ba54acb5307651ccf51d0f7dc1cbc8dbae0726ff952d11ef61c6b8
+  languageName: node
+  linkType: hard
+
+"redux-thunk@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "redux-thunk@npm:3.1.0"
+  peerDependencies:
+    redux: ^5.0.0
+  checksum: bea96f8233975aad4c9f24ca1ffd08ac7ec91eaefc26e7ba9935544dc55d7f09ba2aa726676dab53dc79d0c91e8071f9729cddfea927f4c41839757d2ade0f50
+  languageName: node
+  linkType: hard
+
+"redux@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "redux@npm:5.0.1"
+  checksum: e74affa9009dd5d994878b9a1ce30d6569d986117175056edb003de2651c05b10fe7819d6fa94aea1a94de9a82f252f986547f007a2fbeb35c317a2e5f5ecf2c
   languageName: node
   linkType: hard
 
@@ -8193,6 +8452,13 @@ __metadata:
   version: 2.0.0
   resolution: "require-main-filename@npm:2.0.0"
   checksum: e9e294695fea08b076457e9ddff854e81bffbe248ed34c1eec348b7abbd22a0d02e8d75506559e2265e96978f3c4720bd77a6dad84755de8162b357eb6c778c7
+  languageName: node
+  linkType: hard
+
+"reselect@npm:^5.1.0":
+  version: 5.1.1
+  resolution: "reselect@npm:5.1.1"
+  checksum: 5d32d48be29071ddda21a775945c2210cf4ca3fccde1c4a0e1582ac3bf99c431c6c2330ef7ca34eae4c06feea617e7cb2c275c4b33ccf9a930836dfc98b49b13
   languageName: node
   linkType: hard
 
@@ -9301,6 +9567,15 @@ __metadata:
   dependencies:
     punycode: ^2.1.0
   checksum: 7167432de6817fe8e9e0c9684f1d2de2bb688c94388f7569f7dbdb1587c9f4ca2a77962f134ec90be0cc4d004c939ff0d05acc9f34a0db39a3c797dada262633
+  languageName: node
+  linkType: hard
+
+"use-sync-external-store@npm:^1.0.0":
+  version: 1.2.2
+  resolution: "use-sync-external-store@npm:1.2.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: fe07c071c4da3645f112c38c0e57beb479a8838616ff4e92598256ecce527f2888c08febc7f9b2f0ce2f0e18540ba3cde41eb2035e4fafcb4f52955037098a81
   languageName: node
   linkType: hard
 
