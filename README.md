@@ -5,12 +5,17 @@
 ### For Android
 
 ```bash
+yarn install
 yarn android
 ```
 
 ### For iOS
 
 ```bash
+yarn install
+cd ios
+pod install
+cd ..
 yarn ios
 ```
 
